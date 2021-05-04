@@ -1,0 +1,10 @@
+.layout {
+  min-height: 100vh;
+}
+
+.layoutMain {
+  /* Hacky solution to move footer to the bottom of the page */
+  /* 96px = heigh of header + height of footer */
+  min-height: calc(100vh - 96px);
+  padding: 1rem;
+}
