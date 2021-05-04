@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-  pathPrefix: "/my-page",
+  pathPrefix: "/stable",
   siteMetadata: {
     title: "Site title",
     titleTemplate: "%s · Title Template",
