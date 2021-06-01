@@ -8,7 +8,7 @@ import * as FooterStyles from "./css/Footer.module.css";
 const Footer = (props) => {
   return (
     <footer className={`flex w100 ${FooterStyles.footer}`}>
-      <p>Footer</p>
+      
     </footer>
   );
 };

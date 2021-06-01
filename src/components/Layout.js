@@ -21,11 +21,13 @@ const Layout = (props) => {
       
       <Header />
 
+      {/* Main content */}
       <main className={LayoutStyles.layoutMain}>
         {props.children}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
+
     </div>
   );
 };
@@ -34,11 +36,7 @@ const Layout = (props) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string,
-};
-
-Layout.defaultProps = {
-  description: "Balanced Body",
+  description: PropTypes.string.isRequired,
 };
 
 export default Layout;
