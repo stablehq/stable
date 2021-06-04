@@ -1,7 +1,7 @@
 .heroContainer {
   position: relative;
-  min-height: 800px;
   overflow-x: hidden;
+  margin-bottom: 6rem;
 }
 
 .grad {
@@ -10,14 +10,14 @@
   left: 0;
   min-width: 1920px;
   width: 100%;
-  height: 700px;
+  height: 800px;
   background:
     linear-gradient(to bottom,#43aaef 5%, transparent),
     linear-gradient(to top left, #54D1C1 50%, transparent),
     linear-gradient(to top right, #514fff 50%, #706eff82);
 }
 
-.gradInner {
+.gradInner, .gradInner2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,6 +41,28 @@
     radial-gradient(ellipse at 100% 10%, #524fff87, transparent 30%);
   background-blend-mode: screen;
   z-index: 2;
+
+  opacity: 1;
+  animation-name: gradAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.gradInner2 {
+  transform: scaleX(-1);
+  animation-name: gradAnim2;
+}
+
+@keyframes gradAnim {
+  0%   {opacity: 0;}
+  50%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes gradAnim2 {
+  0%   {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .gradMask {
@@ -53,7 +75,7 @@
   z-index: 3;
 }
 
-.glass {
+/* .glass {
   position: absolute;
   left: 50%;
   top: 100%;
@@ -68,4 +90,22 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: none;
+} */
+
+.heroInfoContainer {
+  position: absolute;
+  left: 50%;
+  top: 13rem;
+  transform: translateX(-50%);
+  padding: 0 3rem;
+  z-index: 4;
+}
+
+.heroText {
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 4rem;
+  padding-right: 2rem;
 }

@@ -1,0 +1,94 @@
+.summary {
+  padding: 0 3rem;
+  margin: 0 auto;
+  margin-bottom: 9rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: 'Teko', sans-serif;
+  color: #43aaef;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.contentContainer {
+
+}
+
+.textContainer {
+
+}
+
+.featuresList {
+
+}
+
+.featuresList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.25rem;
+  /* padding-left: 1rem; */
+  margin-bottom: 3rem;
+}
+
+.bubble {
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 50%;
+  background-color: #43aaef;
+  margin-right: 1rem;
+}
+
+.featuresList li:nth-of-type(2) div {
+  background-color: #49b7e0;
+}
+
+.featuresList li:nth-of-type(3) div {
+  background-color: #4ec4d0;
+}
+
+.featuresList li:nth-of-type(4) div {
+  background-color: #54d1c1;
+}
+
+.iconBank,
+.iconWallet,
+.iconUser {
+  width: 30px;
+  height: 25px;
+}
+
+.iconDollar {
+  width: 28px;
+  height: 28px;
+}
+
+.imageContainer {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.cardImage {
+  position: absolute;
+  top: -3.5rem;
+  left: -8rem;
+  transform: rotate(-15deg);
+  width: 270px;
+  z-index: 2;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.appImage {
+  position: relative;
+  top: 1.5rem;
+  width: 240px;
+  transform: rotate(10deg);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+  border-radius: 30px;
+}

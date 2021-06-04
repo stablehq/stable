@@ -7,6 +7,8 @@ import React from "react";
 // Components
 import Layout from "../components/Layout";
 import HeroSection from "../components/HeroSection";
+import SummarySection from "../components/SummarySection";
+import SignupSection from "../components/SignupSection";
 
 // ======== Component ========
 const Index = (props) => {
@@ -17,6 +19,8 @@ const Index = (props) => {
     >
 
       <HeroSection />
+      <SummarySection />
+      <SignupSection />
 
     </Layout>
   );
