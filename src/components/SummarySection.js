@@ -18,33 +18,37 @@ const SummarySection = (props) => {
       <h2 className={SummaryStyles.title}>Features</h2>
       <div className={`flex flex-row flex-jc-sb w100 ${SummaryStyles.contentContainer}`}>
         <div className={`flex ${SummaryStyles.textContainer}`}>
+
+          {/* Features */}
           <ul className={SummaryStyles.featuresList}>
             <li>
               <div className={`flex ${SummaryStyles.bubble}`}>
-                <Bank className={SummaryStyles.iconBank} />
+                <Wallet className={SummaryStyles.iconWallet} />
               </div> 
-              This is a placeholder for an item.
+              A dynamic digital wallet and debit card gives you full control over your spending habits
             </li>
             <li>
               <div className={`flex ${SummaryStyles.bubble}`}>
                 <Dollar className={SummaryStyles.iconDollar} />
               </div> 
-              This is a placeholder for an item.
-            </li>
-            <li>
-              <div className={`flex ${SummaryStyles.bubble}`}>
-                <Wallet className={SummaryStyles.iconWallet} />
-              </div> 
-              This is a placeholder for an item.
+              Effortlessly push money to your Stable debit card when you need it
             </li>
             <li>
               <div className={`flex ${SummaryStyles.bubble}`}>
                 <User className={SummaryStyles.iconUser} />
               </div> 
-              This is a placeholder for an item.
+              Define savings goals, create a fund for emergencies, and track your progress
+            </li>
+            <li>
+              <div className={`flex ${SummaryStyles.bubble}`}>
+                <Bank className={SummaryStyles.iconBank} />
+              </div> 
+              Keep your money closer, without dealing with predatory banks
             </li>
           </ul>
         </div>
+
+        {/* Image */}
         <div className={`flex ${SummaryStyles.imageContainer}`}>
           <img 
             src="https://via.placeholder.com/242x153"

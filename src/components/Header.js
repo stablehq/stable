@@ -41,9 +41,14 @@ const Header = (props) => {
             {/* About */}
             <li><a href="/" className="flex flex-row">
               <svg width="30" height="30" fill="#fff" viewBox="0 0 24 24" className={HeaderStyles.icon}>
+                <path className={HeaderStyles.iconFill} stroke="#43aaef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.75 19.25L12 4.75L19.25 19.25L12 15.75L4.75 19.25Z"/>
+                <path className={HeaderStyles.iconFill} stroke="#43aaef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15.5V12.75"/>              
+              </svg>
+              <p>Sign Up</p>
+              {/* <svg width="30" height="30" fill="#fff" viewBox="0 0 24 24" className={HeaderStyles.icon}>
                 <path className={HeaderStyles.iconFill} stroke="#43aaef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z" clip-rule="evenodd"/>
               </svg>
-              <p>About</p>
+              <p>About</p> */}
             </a></li>
           </ul>
         </nav>
