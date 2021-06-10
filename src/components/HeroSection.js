@@ -7,7 +7,7 @@ import * as HeroStyles from "./css/HeroSection.module.css";
 // ======== Component ========
 const HeroSection = (props) => {
   return (
-    <section className={`flex flex-jc-fs w100 ${HeroStyles.heroContainer}`}>
+    <section className={`flex flex-jc-fs w100 ${HeroStyles.heroContainer}`} id="hero">
       {/* Gradient */}
       <div className={HeroStyles.grad}>
         <div className={HeroStyles.gradInner}></div>

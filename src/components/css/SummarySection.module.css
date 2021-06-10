@@ -1,7 +1,18 @@
 .summary {
+  position: relative;
   padding: 0 1.25rem;
   margin: 0 auto;
   margin-bottom: 9rem;
+}
+
+.summaryScroll {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  z-index: -1;
 }
 
 .title {
@@ -78,11 +89,105 @@
   position: absolute;
   top: -3.5rem;
   left: -8rem;
-  transform: rotate(-15deg) scale(1.1);
-  width: 270px;
-  z-index: 2;
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
+  transform: rotate(-15deg) scale(1.25);
+  width: 242px;
+  height: 153px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.075);
   border-radius: 10px;
+  z-index: 2;
+
+  
+  padding: 1rem;
+  background: linear-gradient(to bottom, rgba(237, 237, 237, 0.7), rgba(153, 153, 153, 0.3));
+  border: 1px solid rgb(216, 216, 216);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.cardMagStrip {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 28px;
+  background-color:rgba(0, 0, 0, 0.2);
+  z-index: -1
+}
+
+.cardChip {
+  position: absolute;
+  width: 37px;
+  left: 1rem;
+  top: 64px;
+  z-index: 3;
+}
+
+.cardTouch {
+  position: absolute;
+  width: 18px;
+  left: 3.75rem;
+  top: 66px;
+  z-index: 3;
+}
+
+.cardLogo {
+  position: absolute;
+  width: 80px;
+  right: 1rem;
+  top: 26px;
+  z-index: 3;
+}
+
+.cardVisa {
+  position: absolute;
+  width: 30px;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 3;
+}
+
+.cardNo {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  text-shadow: 1px 1px #b1b1b1;
+  color: var(--cp-purple);
+  left: 1rem;
+  top: 103px;
+  font-size: 0.85rem;
+  z-index: 3;
+}
+
+.cardName {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  text-shadow: 0.5px 0.5px #b1b1b1;
+  color: rgb(26, 26, 26);
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 0.6rem;
+  z-index: 3;
+}
+
+.cardExp {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  text-shadow: 0.5px 0.5px #b1b1b1;
+  color: rgb(26, 26, 26);
+  left: 7.5rem;
+  bottom: 1rem;
+  font-size: 0.6rem;
+  z-index: 3;
+}
+
+.cardGoodThru {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  color: rgb(26, 26, 26);
+  left: 6.75rem;
+  bottom: 1rem;
+  font-size: 0.25rem;
+  z-index: 3;
 }
 
 .appImage {
@@ -93,3 +198,21 @@
   box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
   border-radius: 30px;
 }
+
+
+/* .glass {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+  height: 400px;
+  width: 2;
+  z-index: 4;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+} */

@@ -14,8 +14,8 @@ import SignupSection from "../components/SignupSection";
 const Index = (props) => {
   return (
     <Layout 
-      title="Site title"
-      description="Home page example description"
+      title="Stable | Harness Your Spending"
+      description="Stable description"
     >
 
       <HeroSection />

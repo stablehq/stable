@@ -1,6 +1,18 @@
 .signup {
+  position: relative;
   padding: 0 3rem;
   margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.summaryScroll {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  z-index: -1;
 }
 
 .title {
@@ -21,7 +33,6 @@
 
 .form {
   position: relative;
-  margin-bottom: 6rem;
 }
 
 .formEmailLabel {
@@ -50,7 +61,7 @@
 
 .emailInput:focus-visible,
 .emailInput:focus {
-  border-color: var(--cp-purple) !important;
+  border-color: var(--cp-purple);
   outline: none;
 }
 
@@ -82,4 +93,14 @@
 
 .emailButton:hover svg {
   transform: rotate(90deg);
+}
+
+.emailFailureMessage {
+  align-self: flex-start;
+  min-height: 1.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1.33rem;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
 }
