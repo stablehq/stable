@@ -14,16 +14,19 @@ const HeroSection = (props) => {
         <div className={HeroStyles.gradInner2}></div>
         <div className={HeroStyles.gradMask}></div>
         {/* <div className={HeroStyles.glass}></div> */}
-        <div className={`flex flex-row w100 wrapper ${HeroStyles.heroInfoContainer}`}>
-          <h1 className={HeroStyles.heroText}>
-            This is placeholder text for our hero. Short section of text.
-          </h1>
-          <img 
-            src="https://via.placeholder.com/350x350"
-            alt="Hero with phone"
-            className={HeroStyles.heroImage}
-          />
-        </div>
+      </div>
+
+      <div className={`flex flex-row flex-jc-sb w100 wrapper ${HeroStyles.heroInfoContainer}`}>
+        <h1 className={HeroStyles.heroText}>
+            Break the cycle of impulse spending.
+          <br/>Save up for the important things. 
+          <br/>Build better financial habits.
+        </h1>
+        <img 
+          src="https://via.placeholder.com/260x400"
+          alt="Hero with phone"
+          className={HeroStyles.heroImage}
+        />
       </div>
     </section>
   );
