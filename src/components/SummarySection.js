@@ -19,8 +19,8 @@ import CardTouch from "../assets/images/icon_card_touch.svg";
 const SummarySection = (props) => {
   return (
     <section className={`flex w100 wrapper ${SummaryStyles.summary}`}>
-      <div className={SummaryStyles.summaryScroll} id="features"></div>
-      <h2 className={SummaryStyles.title}>Features</h2>
+      <div className={SummaryStyles.scroll} id="features"></div>
+      <h2 className={SummaryStyles.title}>Stable Features</h2>
       <div className={`flex flex-row flex-jc-sb w100 ${SummaryStyles.contentContainer}`}>
         <div className={`flex ${SummaryStyles.textContainer}`}>
 
@@ -55,12 +55,6 @@ const SummarySection = (props) => {
 
         {/* Image */}
         <div className={`flex ${SummaryStyles.imageContainer}`}>
-          {/* <img 
-            src="https://via.placeholder.com/242x153"
-            alt="Hero with phone"
-            className={SummaryStyles.cardImage}
-          /> */}
-
           <div className={SummaryStyles.cardImage}>
             <div className={SummaryStyles.cardMagStrip}></div>
             <Chip className={SummaryStyles.cardChip}/>
@@ -72,7 +66,6 @@ const SummarySection = (props) => {
             <p className={SummaryStyles.cardExp}>11/23</p>
             <p className={SummaryStyles.cardGoodThru}>GOOD<br/>THRU</p>
           </div>
-
 
           <StaticImage 
             src="../assets/images/app.png"

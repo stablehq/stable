@@ -7,6 +7,7 @@ import React from "react";
 // Components
 import Layout from "../components/Layout";
 import HeroSection from "../components/HeroSection";
+import ProblemSection from "../components/ProblemSection";
 import SummarySection from "../components/SummarySection";
 import SignupSection from "../components/SignupSection";
 
@@ -17,8 +18,9 @@ const Index = (props) => {
       title="Stable | Harness Your Spending"
       description="Stable description"
     >
-
+      
       <HeroSection />
+      <ProblemSection />
       <SummarySection />
       <SignupSection />
 

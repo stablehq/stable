@@ -4,6 +4,10 @@ import React from "react";
 // CSS
 import * as HeroStyles from "./css/HeroSection.module.css";
 
+// Components
+import Pig from "../assets/images/piggy_bank.svg";
+import Coins from "../assets/images/piggy_money.svg";
+
 // ======== Component ========
 const HeroSection = (props) => {
   return (
@@ -22,11 +26,17 @@ const HeroSection = (props) => {
           <br/>Save up for the important things. 
           <br/>Build better financial habits.
         </h1>
-        <img 
+
+        <div className={HeroStyles.heroBubbleContainer}>
+          <Pig className={HeroStyles.heroPiggyBank} />
+          <Coins className={HeroStyles.heroPiggyMoney} />
+        </div>
+
+        {/* <img 
           src="https://via.placeholder.com/260x400"
           alt="Hero with phone"
           className={HeroStyles.heroImage}
-        />
+        /> */}
       </div>
     </section>
   );

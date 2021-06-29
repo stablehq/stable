@@ -25,12 +25,12 @@ const Header = (props) => {
         <nav>
           <ul className={`flex flex-row ${HeaderStyles.navList}`}>
             {/* Home */}
-            <li><button onClick={() => { scrollTo("#hero"); }} className="flex flex-row">
+            <li><button onClick={() => { scrollTo("#problem"); }} className="flex flex-row">
               <svg width="30" height="30" fill="none" viewBox="0 0 24 24" className={HeaderStyles.icon}>
                 <path className={HeaderStyles.iconFill} fill="#fff" stroke="#43aaef" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6.8,19.3h10.5c1.1,0,2-0.9,2-2V9.8l-7.3-5l-7.2,5v7.5C4.8,18.4,5.6,19.3,6.8,19.3z"/>
                 <path className={HeaderStyles.pathFill} fill="#fff" stroke="#43aaef" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.7,13.4c0-1.1,0.9-2,2-2h0.5c1.1,0,2,0.9,2,2v3.5h-1.9H9.7V13.4z"/>
               </svg>
-              <p>Home</p>
+              <p>The Problem</p>
             </button></li>
             {/* Features */}
             <li><button onClick={() => { scrollTo("#features"); }} className="flex flex-row">

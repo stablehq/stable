@@ -2,7 +2,7 @@
   position: relative;
   padding: 0 1.25rem;
   margin: 0 auto;
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
 }
 
 .scroll {
@@ -18,11 +18,18 @@
 .title {
   font-size: 3.5rem;
   text-align: left;
-  align-self: flex-start;
+  /* align-self: flex-end; */
+  text-align: center;
   margin-bottom: 2.5rem;
   letter-spacing: 1px;
   color: var(--cp-blue);
   font-family: var(--ff-heading);
+}
+
+.colon {
+  width: 7px;
+  padding-bottom: 3px;
+  padding-left: 2px;
 }
 
 .contentContainer {
@@ -87,14 +94,13 @@
 .imageContainer {
   position: relative;
   padding-right: 2rem;
-  bottom: 2.5rem;
 }
 
 .cardImage {
-  position: absolute;
-  top: -2.5rem;
-  left: -9rem;
-  transform: rotate(-15deg) scale(1.25);
+  /* position: absolute; */
+  /* top: -2.5rem; */
+  /* left: -9rem; */
+  /* transform: rotate(-15deg) scale(1.25); */
   width: 242px;
   height: 153px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.075);
@@ -203,21 +209,3 @@
   box-shadow: 3px 3px 3px rgba(0,0,0,0.05);
   border-radius: 30px;
 }
-
-
-/* .glass {
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, -100%);
-  height: 400px;
-  width: 2;
-  z-index: 4;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: none;
-} */

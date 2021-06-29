@@ -6,7 +6,7 @@
 .heroContainer {
   position: relative;
   overflow-x: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
   height: var(--grad-height);
 }
 
@@ -21,6 +21,8 @@
     linear-gradient(to bottom,#43aaef 5%, transparent),
     linear-gradient(to top left, #54D1C1 50%, transparent),
     linear-gradient(to top right, #514fff 50%, #706eff82);
+  /* clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%); */
+  /* box-shadow: var(--text-shadow); */
 }
 
 .gradInner, .gradInner2 {
@@ -99,7 +101,7 @@
 } */
 
 .heroInfoContainer {
-  padding-top: 10rem;
+  padding-top: 12.75rem;
   max-width: calc(1100px - 5rem);
   margin: 0 auto;
   z-index: 4;
@@ -109,6 +111,7 @@
   font-size: 3.25rem;
   line-height: 4rem;
   letter-spacing: 0.5px;
+  padding-right: 2rem;
   text-shadow: var(--text-shadow);
   font-family: var(--ff-heading);
   color: var(--c-white);
@@ -118,4 +121,48 @@
   position: relative;
   bottom: 5px;
   font-size: 3rem;
+}
+
+.heroBubbleContainer {
+  position: relative;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+}
+
+.heroPiggyBank {
+  position: absolute;
+  width: 150px;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: bankAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.heroPiggyMoney {
+  position: absolute;
+  width: 150px;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-51%);
+  animation-name: moneyAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bankAnim {
+  0%   {bottom: -1rem;}
+  50%  {bottom: 0rem;}
+  100% {bottom: -1rem;}
+}
+@keyframes moneyAnim {
+  0%   {top: -1rem;}
+  50%  {top: 0rem;}
+  100% {top: -1rem;}
 }

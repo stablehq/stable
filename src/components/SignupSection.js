@@ -66,11 +66,11 @@ const SignupSection = (props) => {
 
   return (
     <section className={`flex w100 wrapper ${SignupStyles.signup}`}>
-      <div className={SignupStyles.summaryScroll} id="signUp"></div>
+      <div className={SignupStyles.scroll} id="signUp"></div>
       <h2 className={SignupStyles.title}>Sign Up</h2>
       <p className={SignupStyles.subTitle}>
         Be among the first to curb impulse spending with Stable.
-        <br/>Sign up to be put on our waiting list.
+        <br/>Sign up to join our waiting list.
       </p>
 
       {/* Email input */}
@@ -88,7 +88,7 @@ const SignupSection = (props) => {
             className={SignupStyles.formEmailLabel}
             // style={labelCSS}
             style={(emailValid === null) ? labelCSS : (emailValid === true || emailSubmitted) ? { ...labelCSS, color: "#54d1c1" } : { ...labelCSS, color: "red" }}>
-          Email
+            Email
           </p>
           <button 
             type="submit"

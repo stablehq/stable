@@ -14,6 +14,7 @@ const Footer = (props) => {
         <div className={FooterStyles.gradInner2}></div>
         <div className={FooterStyles.gradMask}></div>
       </div>
+      <p>gey</p>
     </footer>
   );
 };
